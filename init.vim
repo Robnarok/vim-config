@@ -5,6 +5,10 @@ Plug 'sainnhe/everforest'
 Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'isobit/vim-caddyfile'
+
+
+
 call plug#end()
 " Beginn Colorscheme
 if has('termguicolors')
