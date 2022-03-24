@@ -52,3 +52,6 @@ set softtabstop=0 expandtab
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
+" Source Custom Configs
+source $HOME/.config/nvim/extra.vim
