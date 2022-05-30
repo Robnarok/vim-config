@@ -61,11 +61,9 @@ inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
-<<<<<<< HEAD
 let g:coc_filetype_map = {
   \ 'yaml.ansible': 'ansible',
   \ }
-=======
 "Set default Clipboard to systemwide - Aka fix Copy Paste
 set clipboard+=unnamedplus
 
@@ -86,7 +84,6 @@ let g:go_highlight_operators = 1
 let g:go_highlight_extra_types = 1
 let g:go_highlight_build_constraints = 1
 let g:go_highlight_generate_tags = 1
->>>>>>> 2ffc251aefe7ddf7c4e28aff0cc84fd463dd7b71
 
 " Source Custom Configs
 source $HOME/.config/nvim/extra.vim
