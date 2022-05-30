@@ -6,9 +6,8 @@ Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'isobit/vim-caddyfile'
-
-
-
+Plug 'yaegassy/coc-ansible', {'do': 'yarn install --frozen-lockfile'}
+Plug 'dense-analysis/ale'
 call plug#end()
 " Beginn Colorscheme
 if has('termguicolors')
@@ -52,6 +51,10 @@ set softtabstop=0 expandtab
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
+let g:coc_filetype_map = {
+  \ 'yaml.ansible': 'ansible',
+  \ }
 
 " Source Custom Configs
 source $HOME/.config/nvim/extra.vim
