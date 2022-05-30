@@ -14,3 +14,11 @@ just clone it into to .config/nvim
 ### Create extra File
 
 I have created an extra file to enable custom settings for different devices, which arent Synched by git ... so you need to create an file called `extra.vim` to disable the warning at the start of nvim
+
+### Install all Plugins
+
+just run `:PlugInstall` to install all Plugins with Vim Plug
+
+### Todo
+
+Configure the Coc.yaml and implement it
