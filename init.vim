@@ -1,7 +1,7 @@
 call plug#begin()
 Plug 'fatih/vim-go'
-"Plug 'SirVer/ultisnips'
-"Plug 'honza/vim-snippets'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sainnhe/everforest'
 Plug 'NLKNguyen/Papercolor-theme'
@@ -47,9 +47,11 @@ autocmd FileType gitcommit setlocal spell spelllang=en_us,de_de
 autocmd FileType markdown setlocal complete+=kspell spelllang=en_us,de_de
 autocmd FileType gitcommit setlocal complete+=kspell spelllang=en_us,de_de
 
-set relativenumber
+set number relativenumber
 set textwidth=80
 set colorcolumn=80
+set cursorline
+highlight clear CursorLine
 
 set tabstop=4
 set shiftwidth=4
